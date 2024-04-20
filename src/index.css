@@ -1,0 +1,597 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+/* NavbarStyling */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: lavender;
+
+}
+nav h1{
+  margin: 0px;
+
+  padding: 0px 0px 0px 20px;
+  border: 2px solid pink;
+
+  background-color: rgb(128, 102, 128);
+
+}
+nav ul{
+
+  margin: 0px;
+  display: flex;
+
+}
+nav ul li{
+
+  width: 100px;
+  list-style-type: none;
+
+  font-size: 20px;
+  text-align: center;
+}
+nav ul li a{
+  text-decoration: none;
+  font-weight: 500;
+}
+.cart{
+  font-size: 35px;
+}
+.cartsss{
+  position: absolute;
+  top:-10%;
+  left:50%;
+
+  font-size: 15px;
+
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color:black ;
+
+}
+
+
+/* Home */
+.image{
+  position: relative;
+  width:100%;
+  height:350px;
+
+  background-image: url("../public/Images/shopping9.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+.image::before{
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+
+  content: "";
+  background-color: darkgray;
+}
+.homeContent{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+/* ErrorPageStyling */
+.ErrorContainer{
+  text-align: center;
+  padding: 100px 0px;
+}
+button{
+  padding: 5px 2px;
+  border-radius: 5px;
+}
+
+/* filteredProductsContainer Styling */
+.filteredProductsContainer{
+  background-color: lightsteelblue;
+  padding: 50px 120px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.filteredProductsContainer h1{
+  margin: 0;
+}
+
+/* FeaturedCardProduct */
+.cardFeatured{
+  padding: 10px 10px;
+  background-color: aliceblue;
+  border-radius: 10px;
+
+}
+.cardFeatured img{
+  height: 200px;
+  width: 270px;
+}
+.ProductNamePrice{
+  margin-top:5px ;
+
+  display: flex;
+  justify-content: space-between;
+}
+/* .ProductNamePrice .price{
+ 
+} */
+.cardFeatured:hover{
+
+  transform:scaleY(1.1);
+  transition: 0.5s;
+  background-color:cadetblue ;
+}
+
+/* navigations */
+.navigations{
+  display: flex;
+  text-decoration: none;
+}
+
+/* SingleProductPageStyling */
+.singleProductContainier{
+
+  margin: 20px 50px 20px 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.SingleProductImage{
+  width: 60%;
+}
+.singleProductInformation{
+  width: 40%;
+
+}
+.singleProductContainier .singleProductInformation .benefitsApps{
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 10px 0px;
+}
+.singleProductContainier .singleProductInformation .benefitsApps .icons{
+  text-align: center;
+  font-size: 25px;
+}
+.singleProductInformation .benefitsApps .icons span{
+  font-size: 14px;
+
+}
+.singleProductInformation .benefitsApps .icons span span{
+  line-height: 1.8;
+}
+.bold{
+  font-weight: 500;
+}
+
+/* singlePhotoImage */
+.PhotosContainer{
+  display: flex;
+
+  gap: 5px;
+
+  padding-top: 50px;
+  margin-right:10px;
+}
+.PhotosContainer .sidebar{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 10%;
+  padding: 0px 5px;
+  background-color:aliceblue;
+}
+.PhotosContainer .fullPhoto{
+  width: 90%;
+}
+.PhotosContainer .sidebar img{
+  width: 100%;
+  height: 70px;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+.PhotosContainer .fullPhoto img{
+  border-radius: 10px;
+
+  width: 100%;
+}
+.stars{
+  color: gold;
+  font-size: 16px;
+}
+.stars .span{
+  color: black;
+}
+.singleProductColorSection{
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.singleProductColorSection .button{
+
+  font-size: 10px;
+
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+
+  opacity: 0.5;
+}
+
+.singleProductColorSection .active{
+  opacity: 1;
+}
+button .tick{
+  position: relative;
+  top: -100%;
+
+  color: white;
+}
+
+/* toggleIncrmentDecrement */
+.toggleIncrmentDecrement{
+  display: flex;
+  align-items: center;
+}
+.toggleIncrmentDecrement .togglebutton{
+  margin: 0;padding: 0;
+  border: none;
+}
+.toggleIncrmentDecrement .displayProductCount{
+  /* display: inline-block; */
+  padding: 0px 10px;
+  margin: 0;
+  font-size: 20px;
+  
+}
+.addToCartButton{
+  background-color: rgb(255, 255, 24);
+  padding: 5px 15px;
+
+  border-radius: 10px;
+  border: none;
+
+  margin: 10px 0px;
+}
+
+/* AllProductsPageSection */
+
+.allProductsPageContainer{
+  display: flex;
+
+  padding: 0px 100px 0px 50px;
+
+  margin: 40px 0px;
+}
+.allProductsPageContainer .filterProductsSection{
+  width: 20%;
+}
+.sortingProductsSection_Products{
+  width: 80%;
+}
+/* .sortingProductsSection_Products .sotingProducts{
+
+}
+.sortingProductsSection_Products .allProducts{
+} */
+
+/* Grid */
+.filteredProductsContainerGrid{
+  background-color: lightsteelblue;
+  padding: 30px 20px ;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+/* ListView */
+.listContainer{
+  display: flex;
+
+  margin-bottom: 20px;
+  border: 2px solid grey;
+}
+.listContainer img{
+  padding: 10px 30px;
+  height: 220px;
+  width: 320px;
+}
+
+.productInformationSection{
+  padding: 10px 80px 10px 10px;
+}
+
+.listContainer button{
+  border: none;
+
+  background-color:lavender ;
+  padding: 6px 14px;
+  margin-top: 15px;
+}
+
+.listContainer button:hover{
+
+  background-color:rgb(186, 186, 248) ;
+}
+
+/* gridicon and sortingbox */
+.sorting_gridList{
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+.gridListIcon{
+  display: flex;
+}
+.gridListIcon span{
+  padding: 10px 12px ;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridicon{
+  cursor: pointer;
+}
+.listicon{
+  cursor: pointer;
+}
+
+.gridListIcon .active{
+  background-color: lavender;
+}
+
+/* Categoryfiltercontainer */
+.defaultMargin{
+  margin: 20px 0px 20px 0px;
+}
+
+.Categoryfiltercontainer .buttonsContainer{
+  display: flex;
+
+  flex-direction: column;
+}
+.buttonsContainer button{
+  border: none;
+  margin: 5px;
+}
+.buttonsContainer button:hover{
+  
+  background-color:rgb(187, 187, 247);
+}
+
+/* filter section category */
+.buttonsContainer .active{
+  background-color: #B0C4DE;
+}
+
+/* filterColorContainer */
+.filterColorContainer .colorContainer{
+  display: flex;
+  gap: 10px;
+}
+.filterColorContainer .buttonAll{
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filterColorContainer .button{
+  height: 25px;
+  width: 25px;
+
+  border-radius: 15px;
+
+  opacity: 0.5;
+}
+
+.filterColorContainer .active{
+  opacity: 1;
+}
+
+.filterColorContainer .tick{
+  font-size: 12px;
+  position: relative;
+  top: -80%;
+
+  color: white;
+}
+
+
+/* cartHeadingInfo */
+.cartHeadingInfo{
+  padding: 0px 0px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  /* background-color: yellow; */
+}
+.cartHeadingInfo .cartRowSize{
+
+  width: 100%;
+  /* background-color: green; */
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  display: flex;
+
+
+  justify-content:space-evenly;
+}
+.cartHeadingInfo li{
+  /* background-color: pink; */
+
+  /* border: 2px solid black; */
+  text-align: center;
+  width: 20%;
+}
+.cartRowSize img{
+  height: 80px;
+  width: 90px;
+}
+.productImage_name{
+  margin: 0;
+  display: flex;
+
+  gap: 10px;
+}
+.productImage_name .name{
+  display: flex;
+
+  flex-direction:column;
+  justify-content: center;
+}
+.productImage_name .colorBlock{
+  display: flex;
+
+  align-items: center;
+}
+.productImage_name .color{
+  height: 15px;
+  width: 15px;
+
+  display: inline-block;
+  
+  border-radius: 10px;
+
+  margin: 0;padding: 0;
+}
+.alignItemCenter{
+  display: flex;
+
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteCartItem{
+  color: red;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+/* clearCart_ContinueShopping */
+.clearCart_ContinueShopping{
+  display: flex;
+  justify-content: space-between;
+
+  margin: 20px 80px;
+}
+.clearCart_ContinueShopping button{
+  padding: 5px 10px;
+  border: none;
+
+  background-color: lavender;
+}
+.continueShopping:hover{
+  background-color: rgb(163, 163, 255);
+}
+.clearCartButton:hover{
+  background-color: rgb(228, 51, 51);
+}
+.TotalBalanceContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  margin-bottom: 50px;
+
+}
+.totalPrice_shippingFee{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 13vw;
+  width: 300px;
+
+  padding: 10px 10px;
+  background-color: lavender;
+  
+}
+/* contactPage */
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 100px ;
+  margin-bottom: 100px;
+  
+}
+.contactForm input,textarea{
+  padding: 5px 10px;
+}
+
+/* cssDefine by me */
+.bold{
+  font-weight: bold;
+}
+
+
+/* FooterStyling */
+footer{
+  background-color: lavender;
+  padding: 30px 0px ;
+
+  /* position: absolute;
+  bottom: 0%;
+  width: 100%; */
+
+}
+footer hr{
+  background-color: rgb(86, 86, 99);
+}
+footer h1{
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+footer ul{
+  display: flex;
+  justify-content: space-evenly;
+
+  list-style-type: none;
+
+}
+footer ul li{
+
+  width: 100px;
+  list-style-type: none;
+
+  font-size: 16px;
+  text-align: center;
+}
+footer ul li a{
+  text-decoration: none;
+}
